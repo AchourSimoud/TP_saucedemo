@@ -9,7 +9,7 @@
 - Checkout Overview page
 
 ## Test executés : 28
-## Echecs : 3
+### Echecs : 3
 
 ## Bug détectés :
 - ### Page produits :
