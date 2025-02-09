@@ -1,4 +1,4 @@
-## Problèmes Détectés
+**Problèmes Détectés**
 
 - **Page produits** : Les cartes des produits ne se remettent pas à leur état initial après une action (ex : ajout au panier).
 - **Page panier** : L'utilisateur peut accéder à la page des informations personnelles même lorsque le panier est vide. Il faut bloquer cette action si le panier est vide.
