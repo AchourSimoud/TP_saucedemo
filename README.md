@@ -13,12 +13,12 @@
 
 ## Bug détectés :
 - ### Page produits :
-Les cartes des produits ne se remettent pas à leur état initial après une action (ex : ajout au panier).
+Les cartes des produits ne se remettent pas à leur état initial aprés le clique sur le bouton reset.
 
 - ### Page panier : 
 L'utilisateur peut accéder à la page des informations personnelles même lorsque le panier est vide. Il faut bloquer cette action si le panier est vide.
 
 - ### Page informations personnelles : 
-Les champs de la page ne sont pas correctement vérifiés (validation manquante des informations saisies). 
+Les champs de la page ne sont pas correctement vérifiés le fomulaire passe méme en remplissant avec des espaces par exemple. 
 
 
