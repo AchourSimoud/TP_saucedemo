@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: com.logwire.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 572.278 s <<< FAILURE! - in com.logwire.RunCucumberTest
+Panier.ne pas continuer si aucun article est ajoute  Time elapsed: 15.514 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <https://www.saucedemo.com/checkout-step-one.html>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:277)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:263)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:258)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:2816)
+	at com.logwire.steps.CartSteps.je_ne_suis_pas_redirige_vers_la_page(CartSteps.java:76)
+	at ✽.je ne suis pas redirige vers la page "https://www.saucedemo.com/checkout-step-one.html"(classpath:com/logwire/cart.feature:21)
+
+checkout.fomulaire rempli avec des espace  Time elapsed: 42.926 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <https://www.saucedemo.com/checkout-step-two.html>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:277)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:263)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:258)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:2816)
+	at com.logwire.steps.CheckoutSteps.je_ne_suis_pas_redirige_sur_la_page(CheckoutSteps.java:59)
+	at ✽.je ne suis pas redirige sur la page "https://www.saucedemo.com/checkout-step-two.html"(classpath:com/logwire/checkout.feature:36)
+
+Produits.deconnexion  Time elapsed: 16.032 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [18a7e95027d0f8163f2f27b047a198ca, clickElement {id=f.1FA289E9FF756C59BBE7CBD9C70DB2A8.d.C3665B10ECB87889D45AFFD1AA93C400.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\achou\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53583/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (18a7e95027d0f8163f2f27b047a198ca)] -> id: logout_sidebar_link]
+Session ID: 18a7e95027d0f8163f2f27b047a198ca
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.logwire.pages.InventoryPage.logout(InventoryPage.java:118)
+	at com.logwire.steps.ProductSteps.je_click_sur_le_bouton_logout(ProductSteps.java:64)
+	at ✽.je click sur le bouton logout(classpath:com/logwire/produits.feature:20)
+
+Produits.reset des card produit  Time elapsed: 17.59 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at com.logwire.steps.ProductSteps.les_boutons_remove_disparaissent(ProductSteps.java:59)
+	at ✽.les boutons remove disparaissent(classpath:com/logwire/produits.feature:38)
+
