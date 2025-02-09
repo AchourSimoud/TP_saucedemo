@@ -1,11 +1,3 @@
-# Rapport de Test Cucumber
-
-## Résumé des Tests
-- **Total des tests exécutés** : 30
-- **Tests réussis** : 27 ✅
-- **Tests échoués** : 3 ❌
-- **Taux de réussite** : 90%
-
 ## Problèmes Détectés
 - **Page produits** : les cards ne se remettent pas à leur etat initial.
 - **Page panier** : ne pas continuer vers la page des informations personnelles quand le panier est vide
